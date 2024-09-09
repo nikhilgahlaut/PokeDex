@@ -1,0 +1,25 @@
+.pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pokemon-list-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change-btn button{
+    padding: 5px 13px;
+    margin-left: 1rem;
+    font-weight: bolder;
+    border: none;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.change-btn button:hover{
+    background-color:#f4b5b5;
+    cursor:progress;
+}
