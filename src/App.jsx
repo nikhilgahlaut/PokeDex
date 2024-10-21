@@ -10,8 +10,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element = {<Pokedex/>}/>
-      <Route path="/pokemon/:id" element = {<PokemonDetails/>}/>
+      <Route path="/poke-dex" element = {<Pokedex/>}/>
+      <Route path="/poke-dex/pokemon/:id" element = {<PokemonDetails/>}/>
       <Route path="*" element = {<h1>Not found</h1>} />
     </Routes>
   )
