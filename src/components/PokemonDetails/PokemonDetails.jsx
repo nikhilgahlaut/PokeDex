@@ -1,9 +1,9 @@
 //css import
 import { useEffect, useState } from 'react';
 import './PokemonDetails.css'
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link,useParams} from 'react-router-dom'
 
 
 function PokemonDetails() {
@@ -52,7 +52,7 @@ function PokemonDetails() {
                     weight: {pokemon.weight}
                 </div>
                 <div className='types'>
-                    <h1>Type:</h1>{pokemon.types.map(t => <span className='type' key={t.type.name}>{t.type.name}</span>)}
+                    <h1>Type:</h1>{pokemon.types.map(t => <span className='type'>{t.type.name}</span>)}
                 </div>
             </div>}
         </>
